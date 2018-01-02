@@ -4,7 +4,7 @@ import java.util.Random;
 
 class FactBook {
 
-    private String[] factsArr = {
+    String[] factsArr = {
             "Ants stretch when they wake up in the morning.",
             "Ostriches can run faster than horses.",
             "Olympic gold medals are actually made mostly of silver.",
@@ -17,7 +17,8 @@ class FactBook {
             "Mammoths still walked the earth when the Great Pyramid was being built."};
 
     String getFact() {
-        /* Randomly select a fact */
+
+        //Randomly select a fact
 
         Random randomGen = new Random();
         int randomNum = randomGen.nextInt(factsArr.length);
